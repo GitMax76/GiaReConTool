@@ -6,7 +6,7 @@ import io
 
 # Titolo della pagina
 st.title("📄 Convertitore PDF a Excel")
-st.write("Carica il tuo file PDF per convertirlo ed estrarre la tabella.")
+st.write("Carica il report in formato PDF per convertirlo ed estrarre la tabella.")
 
 # Widget per caricare il file
 uploaded_file = st.file_uploader("Scegli il file PDF", type="pdf")
@@ -78,7 +78,7 @@ if uploaded_file is not None:
         st.download_button(
             label="📥 Scarica file Excel",
             data=buffer,
-            file_name="risultato_convertito.xlsx",
+            file_name="report_convertito.xlsx",
             mime="application/vnd.ms-excel"
         )
         st.success("Conversione completata!")
