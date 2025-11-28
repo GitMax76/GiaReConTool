@@ -5,7 +5,7 @@ import re
 import io
 
 # Titolo della pagina
-st.title("📄 Convertitore PDF a Excel")
+st.title("📄 G.I.A.D.A. REPORT CONVERTER")
 st.write("Carica il report in formato PDF per convertirlo ed estrarre la tabella.")
 
 # Widget per caricare il file
